@@ -8,8 +8,6 @@ function Timer() {
   let {
     seconds,
     minutes,
-    hours,
-    days,
     startTimer,
     stopTimer,
     resume

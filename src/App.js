@@ -6,7 +6,10 @@ function App() {
  
   return (
     <div style={{textAlign: 'center'}}>
-      <h1>Pomodoro Timer</h1>
+      <h1>Pomodoro Timer: </h1>
+      <button>Pomodoro</button>
+      <button>Short Break</button>
+      <button>Long Break</button>
       <Timer />
     </div>
   );
