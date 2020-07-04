@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import useTimer  from 'react-timer-hook';
+import parseTime from '../../tools/parseTime'
 
 
 function Timer() {
@@ -18,12 +19,6 @@ function Timer() {
     stopTimer,
     resume
   } = useTimer({ autoStart: false, onExpire: () => alert('Timer is over!'), expiryTimestamp: time});
-
-  function parseTime(seconds) {
-  
-    return seconds <= 9 ?  seconds = "0" + seconds : seconds
-
-  }
   
   return(
     <div>
