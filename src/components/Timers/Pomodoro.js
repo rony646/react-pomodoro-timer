@@ -8,7 +8,7 @@ function Timer() {
   
 
   const time = new Date()
-  time.setSeconds(time.getSeconds() + 1501)
+  time.setSeconds(time.getSeconds() + 5)
   let {
     seconds,
     minutes,

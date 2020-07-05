@@ -8,6 +8,7 @@ const timerEndHandler = () => {
 
     setTimeout(() => {
         alert('Time is over!')
+        document.title = 'React App'
     }, 4500)
 }
 
