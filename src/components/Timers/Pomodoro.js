@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import useTimer  from 'react-timer-hook';
 import TimerCockpit from '../../components/TimerCockpit/TimerCockpit'
 import timerEndHandler from '../../tools/timerEndHandler'
@@ -8,7 +8,7 @@ function Timer() {
   
 
   const time = new Date()
-  time.setSeconds(time.getSeconds() + 5)
+  time.setSeconds(time.getSeconds() + 1501)
   let {
     seconds,
     minutes,

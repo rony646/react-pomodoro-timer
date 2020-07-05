@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Pomodoro from './components/Timers/Pomodoro'
 import ShortBreak from './components/Timers/ShortBreak'
 import LongBreak from './components/Timers/LongBreak'
+import './App.css'
 
 
 
@@ -23,7 +24,7 @@ function App() {
   }
   
   return (
-    <div style={{textAlign: 'center'}}>
+    <div className="App">
       <h1>Pomodoro Timer: </h1>
       <button onClick={() => setTimerType('pomodoro')} >Pomodoro</button>
       <button onClick={() => setTimerType('shortBreak')}>Short Break</button>

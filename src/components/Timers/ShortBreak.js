@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import useTimer  from 'react-timer-hook';
 import TimerCockpit from '../../components/TimerCockpit/TimerCockpit'
 import timerEndHandler from '../../tools/timerEndHandler'
