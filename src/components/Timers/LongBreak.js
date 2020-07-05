@@ -8,7 +8,7 @@ import timerEndHandler from '../../tools/timerEndHandler'
 function Timer() {
 
   const time = new Date()
-  time.setSeconds(time.getSeconds() + 601)
+  time.setSeconds(time.getSeconds() + 5)
   
   let {
     seconds,

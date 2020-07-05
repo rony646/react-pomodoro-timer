@@ -1,6 +1,42 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-size: 85px;
-  background-color: aqua;
+  font-size: 20px;
+  color: #fff;
+  /* background-color: aqua; */
+  min-height: 100vh;
+  max-width: 550px;
 }
 
+.Title {
+  margin-bottom: 75px;
+  /* background-color: red; */
+}
+
+.TimerButton {
+    height: 55px;
+    margin: 0 8px 65px 8px;
+    width: 100px;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.753);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.5s;
+    background: #252525;
+    box-shadow:  4px 4px 12px #151515, 
+                -4px -4px 12px #353535;
+}
+
+.TimerButton:active {
+  color: aqua;
+  box-shadow:  inset 4px 4px 12px #151515, 
+               inset -4px -4px 12px #353535;
+}
+
+.TimerButton:hover {
+  width: 110px;
+  box-shadow:  inset 4px 4px 12px #151515, 
+               inset -4px -4px 12px #353535;
+}

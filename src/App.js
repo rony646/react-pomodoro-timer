@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Pomodoro from './components/Timers/Pomodoro'
 import ShortBreak from './components/Timers/ShortBreak'
 import LongBreak from './components/Timers/LongBreak'
-import './App.css'
+import classes from './App.css'
 
 
 
@@ -24,11 +24,14 @@ function App() {
   }
   
   return (
-    <div className="App">
-      <h1>Pomodoro Timer: </h1>
-      <button onClick={() => setTimerType('pomodoro')} >Pomodoro</button>
-      <button onClick={() => setTimerType('shortBreak')}>Short Break</button>
-      <button onClick={() => setTimerType('longBreak')}>Long Break</button>
+  
+    <div className={classes.App}>
+      <h1 className={classes.Title}>Pomodoro Timer: </h1>
+      <div>
+        <button className={classes.TimerButton} onClick={() => setTimerType('pomodoro')} >Pomodoro</button>
+        <button className={classes.TimerButton} onClick={() => setTimerType('shortBreak')}>Short Break</button>
+        <button className={classes.TimerButton} onClick={() => setTimerType('longBreak')}>Long Break</button>
+      </div>
       {timer}
     </div>
   );
