@@ -6,10 +6,6 @@ import timerEndHandler from '../../tools/timerEndHandler'
 
 function Timer() {
   
-  useEffect(() => {
-    console.log('[Timer.js] Mounted')
-  }, [])
-
 
   const time = new Date()
   time.setSeconds(time.getSeconds() + 1501)
