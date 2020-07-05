@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Pomodoro from './components/Timer/Pomodoro'
-import ShortBreak from './components/Timer/ShortBreak'
-import LongBreak from './components/Timer/LongBreak'
+import Pomodoro from './components/Timers/Pomodoro'
+import ShortBreak from './components/Timers/ShortBreak'
+import LongBreak from './components/Timers/LongBreak'
 
 
 
@@ -10,15 +10,15 @@ function App() {
 
   let timer = null
 
-  if(timerType == 'pomodoro') {
+  if(timerType === 'pomodoro') {
     timer = <Pomodoro />
   }
 
-  if(timerType == 'shortBreak') {
+  if(timerType === 'shortBreak') {
     timer = <ShortBreak />
   }
 
-  if(timerType == 'longBreak') {
+  if(timerType === 'longBreak') {
     timer = <LongBreak />
   }
   
