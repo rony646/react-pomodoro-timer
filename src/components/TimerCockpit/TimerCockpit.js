@@ -15,12 +15,13 @@ function TimerCockpit(props) {
             </div>
             <button 
                 onClick={props.pause} 
-                className={[classes.ControlButton, icons['fa'], icons['fa-stop']].join(' ')}
+                className={[classes.ControlButtonStop, icons['fa'], icons['fa-stop']].join(' ')}
             >
             </button>
             <button 
                 onClick={props.resume} 
-                className={[classes.ControlButton, icons['fa'], icons['fa-play']].join(' ')}
+                className={[classes.ControlButton, icons['fa'], icons['fa-play'], classes.Green].join(' ')}
+                id="play"
             >
             </button>
         </div>

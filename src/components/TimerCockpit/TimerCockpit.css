@@ -3,7 +3,7 @@
     color: #dfdfdfe8;
 }
 
-.ControlButton {
+.ControlButton, .ControlButtonStop {
     margin: 65px 15px;
     border-radius: 25px;
     color: #dfdfdfe8;
@@ -11,14 +11,24 @@
     height: 80px;
     width: 80px;
     border: none;
-    transition: all 0.3s;
+    transition: all 0.15s;
     background: #252525;
     box-shadow:  4px 4px 12px #151515, 
                 -4px -4px 12px #353535;
 }
 
+
 .ControlButton:active {
-    color: #ff0000fa;
+    color: green;
+}
+
+.ControlButtonStop:active {
+    color: #d60000fa;
     box-shadow:  inset 4px 4px 12px #151515, 
                  inset -4px -4px 12px #353535;
+}
+
+.ControlButton:hover, .ControlButtonStop:hover {
+    box-shadow:  inset 4px 4px 12px #151515, 
+    inset -4px -4px 12px #353535;
 }
