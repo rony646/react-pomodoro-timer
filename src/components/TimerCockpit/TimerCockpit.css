@@ -18,7 +18,7 @@
 }
 
 .ControlButton:active {
-    color: rgba(255, 0, 0, 0.979);
+    color: #ff0000fa;
     box-shadow:  inset 4px 4px 12px #151515, 
                  inset -4px -4px 12px #353535;
 }
