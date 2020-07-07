@@ -10,7 +10,9 @@
 }
 
 .Title {
+  font-weight: 200;
   margin-bottom: 75px;
+  color: #dfdfdfe8;
   /* background-color: red; */
 }
 
@@ -19,18 +21,18 @@
     margin: 0 8px 65px 8px;
     width: 100px;
     font-family: inherit;
-    color: rgba(255, 255, 255, 0.753);
+    color: #dfdfdfe8;
     border: none;
     outline: none;
     border-radius: 25px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     background: #252525;
     box-shadow:  4px 4px 12px #151515, 
                 -4px -4px 12px #353535;
 }
 
 .TimerButton:active {
-  color: aqua;
+  color: rgba(255, 0, 0, 0.979);
   box-shadow:  inset 4px 4px 12px #151515, 
                inset -4px -4px 12px #353535;
 }
@@ -39,4 +41,16 @@
   width: 110px;
   box-shadow:  inset 4px 4px 12px #151515, 
                inset -4px -4px 12px #353535;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .TimerButton {
+     font-size: 15px;
+     width: 145px;
+  }
+
+  .TimerButton:hover {
+    width: 165px;
+  }
 }

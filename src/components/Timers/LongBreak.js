@@ -4,7 +4,6 @@ import TimerCockpit from '../TimerCockpit/TimerCockpit'
 import timerEndHandler from '../../tools/timerEndHandler'
 
 
-
 function Timer() {
 
   const time = new Date()
