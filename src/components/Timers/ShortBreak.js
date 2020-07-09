@@ -13,7 +13,8 @@ function Timer() {
     seconds,
     minutes,
     stopTimer,
-    resume
+    resume,
+    isRunning
   } = useTimer({ autoStart: false, onExpire: () => timerEndHandler(), expiryTimestamp: time});
 
   
@@ -23,7 +24,8 @@ function Timer() {
       seconds={seconds}
       minutes={minutes} 
       pause={stopTimer} 
-      resume={resume}/>
+      resume={resume}
+      running={isRunning}/>
     </div>
   )
 }

@@ -8,11 +8,22 @@ function TimerCockpit(props) {
     useEffect(() => {
         console.log(icons['fa-play'])
     }, [])
+
+    const currentTime = <div>
+                            <span>{parseTime(props.minutes)}</span>:<span>{parseTime(props.seconds)}</span>
+                        </div>
+
+    if(props.running) {
+        document.title = `${parseTime(props.minutes)}:${parseTime(props.seconds)} | Pomodoro Timer`
+    } else {
+        document.title =  'Time is over'
+    }
+   
+
     return(
         <div>
             <div className={classes.TimerShow}>
-                <span>{parseTime(props.minutes)}</span>:<span>{parseTime(props.seconds)}</span>
-                <p style={{fontSize: '14px'}}>Beta Version 1.0</p>
+                {currentTime}
             </div>
             <button 
                 onClick={props.pause} 
