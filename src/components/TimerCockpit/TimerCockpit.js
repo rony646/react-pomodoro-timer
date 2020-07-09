@@ -12,6 +12,7 @@ function TimerCockpit(props) {
         <div>
             <div className={classes.TimerShow}>
                 <span>{parseTime(props.minutes)}</span>:<span>{parseTime(props.seconds)}</span>
+                <p style={{fontSize: '14px'}}>Beta Version 1.0</p>
             </div>
             <button 
                 onClick={props.pause} 

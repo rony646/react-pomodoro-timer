@@ -1,8 +1,10 @@
 import audio from '../assets/sound/soundfx.mp3'
 
+const sound =  new Audio(audio)
+
 const timerEndHandler = () => {
 
-    const sound =  new Audio(audio)
+    
     sound.play()
     document.title = 'Time is over!'
 
