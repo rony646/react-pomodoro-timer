@@ -14,7 +14,7 @@ function TimerCockpit(props) {
                         </div>
 
     if(props.running) {
-        document.title = `${parseTime(props.minutes)}:${parseTime(props.seconds)} | Pomodoro Timer`
+        document.title = `${parseTime(props.minutes)}:${parseTime(props.seconds)} | Pomodoro Timer` // Set the page title acording to the time
     } else {
         document.title =  'Time is over'
     }

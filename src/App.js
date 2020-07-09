@@ -28,7 +28,7 @@ function App() {
     <div className={classes.App}>
       <h1 className={classes.Title}>Pomodoro Timer</h1>
       <div>
-        <button className={classes.TimerButton} onClick={() => setTimerType('pomodoro')} >Pomodoro</button>
+        <button className={classes.TimerButton} onClick={() => setTimerType('pomodoro')}>Pomodoro</button>
         <button className={classes.TimerButton} onClick={() => setTimerType('shortBreak')}>Short Break</button>
         <button className={classes.TimerButton} onClick={() => setTimerType('longBreak')}>Long Break</button>
       </div>
