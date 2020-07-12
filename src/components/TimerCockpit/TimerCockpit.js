@@ -3,6 +3,7 @@ import parseTime from '../../tools/parseTime'
 
 import classes from './TimerCockpit.css'
 import  icons from '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import ControlButton from '../UI/Button/ControlButton'
 
 function TimerCockpit(props) {
     useEffect(() => {
@@ -15,8 +16,6 @@ function TimerCockpit(props) {
 
     if(props.running) {
         document.title = `${parseTime(props.minutes)}:${parseTime(props.seconds)} | Pomodoro Timer` // Set the page title acording to the time
-    } else {
-        document.title =  'Time is over'
     }
    
 
@@ -25,17 +24,10 @@ function TimerCockpit(props) {
             <div className={classes.TimerShow}>
                 {currentTime}
             </div>
-            <button 
-                onClick={props.pause} 
-                className={[classes.ControlButtonStop, icons['fa'], icons['fa-stop']].join(' ')}
-            >
-            </button>
-            <button 
-                onClick={props.resume} 
-                className={[classes.ControlButton, icons['fa'], icons['fa-play'], classes.Green].join(' ')}
-                id="play"
-            >
-            </button>
+            
+            <ControlButton type="stop" function={props.pause} /* prop function controls what the button does*//>
+            <ControlButton type="play" function={props.resume} /* prop function controls what the button does*//>
+
         </div>
     )
 }
