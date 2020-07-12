@@ -7,8 +7,9 @@ const timerEndHandler = () => {
 
     setTimeout(() => {
         alert('Time is over')
-       document.title = "Pomodoro Timer"
     }, 4500)
+
+    document.title = "Time is over!"
 }
 
 export default timerEndHandler
