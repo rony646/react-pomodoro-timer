@@ -8,12 +8,10 @@ import classes from './App.css'
 function App() {
   
   return (
-    <React.Fragment>
       <div className={classes.Container}>
-        {/* <button className={classes.InfoButton}>Click me!</button>  To do: make info button and the modal*/} 
+        <button className={[classes.InfoButton, icons['fa'], icons['fa-info-circle']].join(' ')}></button>
         <TimerApp />
       </div>
-    </React.Fragment>
   );
 }
 
