@@ -3,7 +3,19 @@
    position: absolute;
    margin-top: 30px;
    min-width: 380px;
-   height: 70%;
+   height: 72%;
    z-index: 2;
    transition: transform 0.5s;
+}
+
+@media (min-width: 1000px) {
+    .Modal {
+        min-width: 600px;
+    }
+}
+
+@media (min-height: 1020px) {
+    .Modal {
+        height: 550px;
+    }
 }

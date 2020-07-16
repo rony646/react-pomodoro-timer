@@ -15,7 +15,7 @@ function App() {
 
   let [showing, setShowing] = useState(false)
 
-  let buttonClasses = [classes.InfoButton, icons['fa'], icons['fa-window-close']].join(' ')
+  let buttonClasses = [classes.InfoButton, icons['fa'], icons['fa-times-circle']].join(' ')
 
   if(!showing) {
     buttonClasses = [classes.InfoButton, icons['fa'], icons['fa-info-circle']].join(' ')
