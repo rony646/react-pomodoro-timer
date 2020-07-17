@@ -1,9 +1,13 @@
+
+
 .Modal {
-   background-color: blue;
+   background-color: lightgreen;
+   display: inline-block;
    position: absolute;
-   margin-top: 30px;
-   min-width: 380px;
-   height: 72%;
+   width: 300px;
+   margin-left: 44px;
+   text-align: center; 
+   height: 430px;
    z-index: 2;
    transition: transform 0.5s;
 }
@@ -11,6 +15,7 @@
 @media (min-width: 1000px) {
     .Modal {
         min-width: 600px;
+        height: 500px;
     }
 }
 

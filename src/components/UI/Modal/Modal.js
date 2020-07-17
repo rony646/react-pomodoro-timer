@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import classes from './Modal.css'
 
@@ -9,6 +9,7 @@ function Modal(props) {
             <button>close</button>
             {props.children}
         </div>
+        
     )
 };
 
