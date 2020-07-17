@@ -51,6 +51,7 @@
     "react-compound-timer": "^1.2.0",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
+    "react-player": "^2.5.0",
     "react-timer-hook": "^2.0.2",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",

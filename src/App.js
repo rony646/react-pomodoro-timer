@@ -29,7 +29,14 @@ function App() {
       <div className={classes.Container}>
         {console.log('[APP.JS]', showing)}
         <Modal show={showing}>
-          test
+          <h3>How does it work?</h3>
+          <p style={{fontSize: '0.8rem', padding: '0px 20px'}}>
+            The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. 
+            The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, 
+            separated by short breaks.
+          </p>
+          <h4>Check more in this video: </h4>
+          
         </Modal>
         <button onClick={showModalHandler} className={buttonClasses}></button>
         <TimerApp />

@@ -1,19 +1,24 @@
 
 
 .Modal {
-   background-color: lightgreen;
-   display: inline-block;
+   display: flex;
+   flex-direction: column;
    position: absolute;
    width: 300px;
-   margin-left: 44px;
+   margin-left: 41px;
    text-align: center; 
-   height: 430px;
+   height: 460px;
    z-index: 2;
    transition: transform 0.5s;
+   border-radius: 24px;
+    background: linear-gradient(145deg, #212121, #282828);
+    box-shadow:  12px 12px 26px #0f0f0f, 
+             -12px -12px 26px #3b3b3b;
 }
 
 @media (min-width: 1000px) {
     .Modal {
+        margin-left: 0;
         min-width: 600px;
         height: 500px;
     }
