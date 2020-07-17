@@ -7,13 +7,13 @@
    width: 300px;
    margin-left: 41px;
    text-align: center; 
-   height: 460px;
+   height: 500px;
    z-index: 2;
    transition: transform 0.5s;
    border-radius: 24px;
     background: linear-gradient(145deg, #212121, #282828);
-    box-shadow:  12px 12px 26px #0f0f0f, 
-             -12px -12px 26px #3b3b3b;
+    box-shadow:  5px 5px 10px #0f0f0f, 
+             -5px -5px 10px #3b3b3b;
 }
 
 @media (min-width: 1000px) {

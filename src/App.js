@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import TimerApp from './containers/TimerApp/TimerApp'
 import Modal from './components/UI/Modal/Modal'
+import ReactPlayer from 'react-player'
 
 
 import icons from '../node_modules/font-awesome/css/font-awesome.min.css'
@@ -36,7 +37,14 @@ function App() {
             separated by short breaks.
           </p>
           <h4>Check more in this video: </h4>
-          
+          <div style={{padding: '15px'}}>
+            <ReactPlayer
+              url="https://www.youtube.com/watch?time_continue=50&v=ykMzzZolhdk&feature=emb_title"
+              width="100%"
+              height="185px">
+            </ReactPlayer>
+          </div>
+         
         </Modal>
         <button onClick={showModalHandler} className={buttonClasses}></button>
         <TimerApp />
