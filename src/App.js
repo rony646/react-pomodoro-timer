@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import TimerApp from './containers/TimerApp/TimerApp'
 import Modal from './components/UI/Modal/Modal'
+import Footer from './components/Footer/Footer'
 import ReactPlayer from 'react-player'
 
 
@@ -9,10 +10,6 @@ import icons from '../node_modules/font-awesome/css/font-awesome.min.css'
 import classes from './App.css'
 
 function App() {
-  
-
-  
-  
 
   let [showing, setShowing] = useState(false)
 
@@ -28,7 +25,6 @@ function App() {
   
   return (
       <div className={classes.Container}>
-        {console.log('[APP.JS]', showing)}
         <Modal show={showing}>
           <h3>How does it work?</h3>
           <p style={{fontSize: '0.8rem', padding: '0px 20px'}}>
@@ -46,8 +42,11 @@ function App() {
           </div>
          
         </Modal>
-        <button onClick={showModalHandler} className={buttonClasses}></button>
+        <div>
+          <button onClick={showModalHandler} className={buttonClasses}></button>
+        </div>
         <TimerApp />
+        <Footer />
       </div>
   );
 }

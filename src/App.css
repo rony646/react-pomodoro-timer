@@ -19,8 +19,8 @@
   border: none;
   width: 60px;
   height: 60px;
-  top: 3px;
-  right: -280px;
+  top: -6px;
+  left: 110px;
   background: #252525;
   box-shadow:  1px 1px 8px #151515, 
               -1px -1px 8px #353535;
@@ -39,7 +39,7 @@
 
 @media (min-width: 800px) {
   .InfoButton {
-    right: -80%;
+    left: 200px;
   }
 
   .Container {
